@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-@RequestMapping("/welcome")
+@RequestMapping("/gretting")
 public class ControllerMgmt {
 	@GetMapping("/data")
      public ResponseEntity<String> getMessage(){
     	 LocalDate now = LocalDate.now();
-    	 return new ResponseEntity<String>("Hii razat welcome to next project, todays date is "+now,HttpStatus.OK);
+    	 return new ResponseEntity<String>("Hii,razat welcome to next project, todays date is "+now,HttpStatus.OK);
      }
 }
