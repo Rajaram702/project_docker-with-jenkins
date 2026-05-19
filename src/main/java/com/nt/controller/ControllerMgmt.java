@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/welcome")
 public class ControllerMgmt {
-	@GetMapping("/message")
+	@GetMapping("/data")
      public ResponseEntity<String> getMessage(){
     	 LocalDate now = LocalDate.now();
     	 return new ResponseEntity<String>("Hii razat welcome to next project, todays date is "+now,HttpStatus.OK);
